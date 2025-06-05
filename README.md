@@ -13,9 +13,12 @@ make
 ```
 # Konfiguracja
 plik konfiguracyjny jest w "config.txt", konfiguruje się następująco:
+
  "#" oznacza komentarz
+ 
 .{section} - oznaczenie sekcji
- elementy pod ostatnia sekcja sa jej elementami
+
+ elementy pod ostatnią sekcją są jej elementami
 
 ------------------------------
  OPIS SEKCJI:
