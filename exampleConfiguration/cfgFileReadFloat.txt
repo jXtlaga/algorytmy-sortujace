@@ -1,0 +1,17 @@
+#skopiuj plik do config txt w celu zaladowania tej w konfiguracji
+#configuracja wczytujace tabele typu float
+.FILE_IN
+arrayDataFloat.txt
+
+.FILE_TYPE
+FLOAT
+
+.SORT_FILE
+HEAP_SORT
+QUICK_SORT_LEFT
+QUICK_SORT_MIDDLE
+QUICK_SORT_RIGHT
+QUICK_SORT_RANDOM
+SHELL_SORT_SHELL
+SHELL_SORT_KNUTH
+

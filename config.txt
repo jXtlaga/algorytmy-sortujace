@@ -1,0 +1,103 @@
+# "#" oznacza komentarz
+#.{section} - oznaczenie sekcji
+# elementy pod ostatnia sekcja sa jej elementami
+
+#------------------------------
+# OPIS SEKCJI:
+#------------------------------
+# 1. .ARR_INT, .ARR_FLOAT
+#   ARR_RAND -> tablica calkowicie wygenerowana
+#   ARR_RAND_33 -> losowa, ale 33% posortowanych
+#   ARR_RAND_66 -> losowa, ale 66% posortowanych
+#   ARR_SORT -> posortowana
+#   ARR_SORT_DESC -> posortowana malejaco
+#
+# 2. .CONF_ARR_SIZE_INT, .CONF_ARR_SIZE_FLOAT
+#   opis: argumentami sa liczby naturalne wyczytywane linia po lini
+#     ktore oznaczaja rozmiar generowanych tablic
+#   np.:
+#   10000
+#   100000
+#
+# 3. .SORT_INT, .SORT_FLOAT 
+#   opis: argumentami sa metody sortowania
+#   INSERT_SORT
+#   HEAP_SORT
+#   QUICK_SORT_LEFT
+#   QUICK_SORT_MIDDLE
+#   QUICK_SORT_RIGHT
+#   QUICK_SORT_RANDOM
+#   SHELL_SORT_SHELL
+#   SHELL_SORT_KNUTH 
+#
+# 4. .FILE_IN
+#   opis: arguementem jest nazwa pliku z ktorego dane sa tablica
+#
+# 5. .FILE_TYPE
+#   opis: zmienne okreslajaca typ danych
+#   INT
+#   FLOAT
+#
+
+
+#ponizej przyklad konfiguracji
+#----------------------------
+#1. KONFIGURACJA INT
+#----------------------------
+#1.1 typ generowanie tablicy
+.ARR_INT
+ARR_RAND_66
+ARR_SORT
+ARR_SORT_DESC
+
+#1.2 rozmiar
+.ARR_SIZE_INT
+3000
+1000
+
+#1.3 typ sortowaniaa
+.SORT_INT
+SHELL_SORT_KNUTH
+#---------------------------
+#2. KONFIGURACJA FLOAT
+#---------------------------
+.ARR_FLOAT
+
+ARR_SORT_DESC
+
+.SORT_FLOAT
+HEAP_SORT
+SHELL_SORT_KNUTH
+
+.ARR_SIZE_FLOAT
+1000
+4000
+#---------------------------------
+#3. KONFIGURACJA PLIKU
+#---------------------------------
+#3.1 plik z danymi wejsciowymi
+.FILE_IN
+arrayDataFloat.txt
+#3.2 typ danych w pliku wejsciowym
+.FILE_TYPE
+FLOAT
+
+#3.4
+.SORT_FILE
+HEAP_SORT
+QUICK_SORT_LEFT
+QUICK_SORT_MIDDLE
+QUICK_SORT_RIGHT
+QUICK_SORT_RANDOM
+SHELL_SORT_SHELL
+SHELL_SORT_KNUTH
+#--------------------------------
+#4. DODATKOWE KONFIGURACJE
+#-------------------------------
+#4.1 informacja czy wyswietlac informacje o sortowaniu
+.CONSOLE_OUT
+TRUE
+#4.2 plik z danymi wyjsciowymi w formacje csv
+.FILE_OUT
+test.txt
+
